@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slashwork · Bots de Discord a medida</title>
+<meta name="description" content="Programamos bots de Discord a medida: moderación, tickets, economía, música y lo que tu servidor necesite. Escríbenos por Discord y te damos un presupuesto claro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">/</span>slashwork
+    </a>
+    <nav class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#opiniones">Opiniones</a>
+    </nav>
+    <a href="https://discord.gg/QA3vThPaSp" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Hablar por Discord</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow">Desarrollo de bots · Discord</div>
+        <h1>Tu servidor pide<br>un bot. <span class="accent">Nosotros<br>lo escribimos.</span></h1>
+        <p class="hero-sub">Programamos bots de Discord a medida — moderación, tickets, economía, música o esa idea rara que tenías guardada. Nada de plantillas genéricas: hablamos contigo por Discord y te damos un presupuesto claro antes de escribir una sola línea.</p>
+        <div class="hero-cta">
+          <a href="https://discord.gg/QA3vThPaSp" class="btn btn-primary" target="_blank" rel="noopener">Pedir presupuesto por Discord</a>
+          <a href="#servicios" class="btn btn-ghost">Ver qué programamos</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="discord-card">
+          <div class="discord-card-top">
+            <span class="dc-dot dc-red"></span><span class="dc-dot dc-yellow"></span><span class="dc-dot dc-green"></span>
+            <span class="dc-channel"># peticion-de-bot</span>
+          </div>
+          <div class="discord-card-body">
+            <div class="msg msg-user">
+              <div class="msg-avatar av-user">JC</div>
+              <div class="msg-content">
+                <div class="msg-head"><span class="msg-name">juanc.</span><span class="msg-time">hoy 12:04</span></div>
+                <div class="msg-text">buenas! ¿podéis hacer un bot de tickets + roles automáticos para mi server?</div>
+              </div>
+            </div>
+            <div class="msg msg-bot" id="botMsg">
+              <div class="msg-avatar av-bot">/</div>
+              <div class="msg-content">
+                <div class="msg-head"><span class="msg-name">Slashwork<span class="app-tag">APP</span></span><span class="msg-time">hoy 12:05</span></div>
+                <div class="typing" id="typingIndicator"><span></span><span></span><span></span></div>
+                <div class="embed" id="botEmbed">
+                  <div class="embed-title">¡Vamos a por ello! 🛠️</div>
+                  <div class="embed-desc">Cuéntanos los detalles por Discord y te preparamos un presupuesto en menos de 24h.</div>
+                  <a href="https://discord.gg/QA3vThPaSp" class="embed-link" target="_blank" rel="noopener">Hablar con Slashwork →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="status-strip">
+      <div class="wrap status-inner">
+        <span class="status-item"><span class="status-dot"></span>En línea ahora</span>
+        <span class="status-sep">·</span>
+        <span class="status-item">Respuesta media: menos de 24h</span>
+        <span class="status-sep">·</span>
+        <span class="status-item">+40 bots entregados</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Lo que programamos</div>
+        <h2>Comandos que tu bot va a tener de verdad</h2>
+        <p>Cada servidor es distinto, así que cada bot también lo es. Estas son las piezas que más nos piden — las combinamos como haga falta para el tuyo.</p>
+      </div>
+
+      <div class="cmd-grid">
+        <div class="cmd-card">
+          <div class="cmd-row"><span class="cmd-name">/moderacion</span></div>
+          <p>Filtros automáticos, avisos, expulsiones y un registro completo de sanciones para mantener el servidor limpio sin estar encima todo el día.</p>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-row"><span class="cmd-name">/tickets</span></div>
+          <p>Sistema de tickets con paneles, categorías y transcripciones automáticas para soporte, solicitudes o candidaturas de staff.</p>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-row"><span class="cmd-name">/economia</span></div>
+          <p>Monedas, tiendas, rangos y minijuegos para que tu comunidad tenga un motivo más para quedarse y volver cada día.</p>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-row"><span class="cmd-name">/bienvenida</span></div>
+          <p>Mensajes de bienvenida, roles automáticos y verificación de miembros nuevos configurados a tu manera.</p>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-row"><span class="cmd-name">/musica</span></div>
+          <p>Reproducción en canales de voz, colas, playlists y controles manejables desde el propio chat.</p>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-row"><span class="cmd-name">/personalizado</span></div>
+          <p>¿Tienes una idea que no encaja en ninguna casilla? Perfecto — programamos lo que todavía no existe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESO ============ -->
+  <section class="process" id="proceso">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Cómo trabajamos</div>
+        <h2>De la idea al bot funcionando, en tres pasos</h2>
+      </div>
+
+      <ol class="steps-list">
+        <li class="step">
+          <span class="step-num">01</span>
+          <div class="step-body">
+            <h3>Nos cuentas tu idea</h3>
+            <p>Escríbenos por Discord, cuéntanos qué necesita tu servidor y te decimos si es viable y cuánto va a costar — sin letra pequeña.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num">02</span>
+          <div class="step-body">
+            <h3>Lo programamos y lo probamos</h3>
+            <p>Construimos el bot y lo probamos contigo en un servidor de pruebas antes de tocar el tuyo de verdad.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num">03</span>
+          <div class="step-body">
+            <h3>Lo lanzamos y le damos soporte</h3>
+            <p>Lo desplegamos en tu servidor y seguimos ahí después — para ajustes, fallos o la próxima idea que se te ocurra.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ TERMINAL / NUMEROS ============ -->
+  <section class="numbers">
+    <div class="wrap">
+      <div class="terminal">
+        <div class="terminal-top">
+          <span class="dc-dot dc-red"></span><span class="dc-dot dc-yellow"></span><span class="dc-dot dc-green"></span>
+          <span class="terminal-title">slashwork — estado</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">&gt;</span> bots_entregados<span class="colon">:</span> <span class="val">40+</span></p>
+          <p><span class="prompt">&gt;</span> servidores_activos<span class="colon">:</span> <span class="val">120+</span></p>
+          <p><span class="prompt">&gt;</span> comandos_ejecutados_mes<span class="colon">:</span> <span class="val">2.000.000+</span></p>
+          <p><span class="prompt">&gt;</span> tiempo_medio_respuesta<span class="colon">:</span> <span class="val">&lt;24h</span></p>
+          <p class="cursor-line"><span class="prompt">&gt;</span> <span class="blink-cursor">_</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OPINIONES ============ -->
+  <section class="reviews" id="opiniones">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Opiniones</div>
+        <h2>Lo que dicen los servers para los que hemos trabajado</h2>
+      </div>
+
+      <div class="review-grid">
+        <div class="review-msg">
+          <div class="msg-avatar av-review">MG</div>
+          <div class="review-body">
+            <div class="msg-head"><span class="msg-name">Mod de un server de gaming</span></div>
+            <p>Encantados con el bot de tickets, nos ahorra un montón de curro con las solicitudes de staff.</p>
+            <div class="reactions"><span class="reaction">👍 12</span><span class="reaction">❤️ 6</span></div>
+          </div>
+        </div>
+        <div class="review-msg">
+          <div class="msg-avatar av-review">AR</div>
+          <div class="review-body">
+            <div class="msg-head"><span class="msg-name">Admin de un server de arte</span></div>
+            <p>Pedimos algo bastante random para organizar comisiones y lo hicieron sin ningún problema.</p>
+            <div class="reactions"><span class="reaction">🔥 9</span></div>
+          </div>
+        </div>
+        <div class="review-msg">
+          <div class="msg-avatar av-review">DL</div>
+          <div class="review-body">
+            <div class="msg-head"><span class="msg-name">Dueño de un server de estudio</span></div>
+            <p>Respuesta rápida por Discord desde el primer mensaje y el bot lleva meses sin dar un solo fallo.</p>
+            <div class="reactions"><span class="reaction">👍 8</span><span class="reaction">🎉 3</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="final-cta">
+    <div class="wrap final-cta-inner">
+      <div class="eyebrow">¿Hablamos de tu bot?</div>
+      <h2>Escríbenos por Discord y cuéntanos qué necesita tu servidor</h2>
+      <p>Te respondemos con un presupuesto claro y sin compromiso. Nada de formularios eternos — solo un mensaje.</p>
+      <a href="https://discord.gg/QA3vThPaSp" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Abrir Discord</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a href="#top" class="brand brand-footer"><span class="brand-mark">/</span>slashwork</a>
+    <nav class="footer-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="https://discord.gg/QA3vThPaSp" target="_blank" rel="noopener">Discord</a>
+    </nav>
+  </div>
+  <div class="wrap">
+    <p class="footer-copy">© <span id="year"></span> Slashwork · Bots de Discord a medida</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
